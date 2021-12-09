@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 300vh;
+    background: #02025a;
+    margin: 0;
+}
+
+.moon {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    filter: drop-shadow(0px 0px 3px #FFD83B);
+    filter: url(#f1);
+    z-index:400;
+}
+
+.moon svg {
+    width: 200px;
+}
+
+.star {
+    max-width: 50px;
+    max-height: 50px;
+    position: absolute;
+    stroke: black;
+    stroke-width: 5px;
+    filter: drop-shadow(0px 0px 3px white);
+}
+
+.star * {
+    width: 100%;
+    height: 100%;
+}
+
+.star path {
+    fill: white;
+}
+
+.content-header {
+    position: relative;
+    background: linear-gradient(transparent, white);
+    width: 100%;
+    height: 20%;
+    top: 200vh;
+    z-index: 5000;
+}
+
+.content {
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    top: 200vh;
+    z-index: 500;
+}
